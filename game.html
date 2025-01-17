@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilik Oyunu</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bilik Oyunu</h1>
+    </header>
+    <main>
+        <section class="registration">
+            <h2>Qeydiyyat</h2>
+            <form id="registrationForm">
+                <input type="text" id="username" placeholder="Adınız" required>
+                <button type="submit">Qeydiyyat</button>
+            </form>
+        </section>
+        <section class="game">
+            <h2>Oyuna Başla</h2>
+            <button onclick="startGame()">Başla</button>
+            <div class="question" id="question"></div>
+            <div class="answers" id="answers"></div>
+        </section>
+        <section class="wheel">
+            <h2>Fənn Çarxı</h2>
+            <div id="wheelContainer">
+                <!-- Çarx təsviri burada olacaq -->
+            </div>
+            <button onclick="spinWheel()">Çarxı Fırlat</button>
+        </section>
+        <section class="leaderboard">
+            <h2>Qaliblər</h2>
+            <ul id="leaderboard"></ul>
+        </section>
+    </main>
+</body>
+</html>
